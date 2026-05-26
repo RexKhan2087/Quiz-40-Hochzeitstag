@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Gib das Lösungswort ein:</h2>
+<input id="wort" type="text" />
+<button onclick="check()">Weiter</button>
+<p id="msg"></p>
+<script>
+function check(){
+  const eingabe = document.getElementById('wort').value.trim().toLowerCase();
+  if(eingabe === 'Schoen, dass wir gemeinsam feiern duerfen'){ // dein Lösungswort
+    window.location.href = '';
+  } else {
+    document.getElementById('msg').innerText = 'Leider falsch.';
+  }
+}
+</script>
+</body>
+</html>
