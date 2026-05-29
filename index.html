@@ -8,15 +8,18 @@
 <input id="wort" type="text" />
 <button onclick="check()">Weiter</button>
 <p id="msg"></p>
+
 <script>
 function check(){
   const eingabe = document.getElementById('wort').value.trim().toLowerCase();
+
   if(eingabe === 'gemeinsam'){
-    window.location.href = 'https://dl.dropboxusercontent.com/scl/fi/iq1dc49cvxcsy0pgi1qsd/Rubinhochzeit.mp4?rlkey=w66qtesz8eii48x6xphaqtpqp&st=m7bdq94v';
+    window.location.href = 'video.html';   // ← Weiterleitung auf deine Videoseite
   } else {
     document.getElementById('msg').innerText = 'Leider falsch.';
   }
 }
 </script>
+
 </body>
 </html>
